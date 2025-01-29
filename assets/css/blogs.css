@@ -1,0 +1,27 @@
+
+#testimonios {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+.input-container {
+    display: flex;
+    gap: 10px;
+}
+#inputTestimonio {
+    width: 100%;
+    padding: 10px;
+}
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkred;
+}

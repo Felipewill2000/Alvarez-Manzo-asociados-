@@ -12,8 +12,8 @@
   <meta content="" name="ZRTHEMES">
 
   <!-- Favicons -->
-  <link href="assets/images/favicon.png" rel="icon">
-  <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/images/favicon.png" rel="icon">
+  <link href="../assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -24,14 +24,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&amp;display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Main CSS File -->
-  <link href="assets/stylesheets/styles.css" rel="stylesheet">
+  <link href="../assets/stylesheets/styles.css" rel="stylesheet">
+  <link href="css.css" rel="stylesheet">
 
 
 </head>
@@ -59,18 +60,18 @@
   <header id="header" class="header d-flex align-items-center">
     <div class="container container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/images/logosinfondo.png" alt="Logo Giancarla Marisio" class="logo-img">
+        <img src="../assets/images/logosinfondo.png" alt="Logo Giancarla Marisio" class="logo-img">
       
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="policy.html">Conóceme </a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../policy.html">Conóceme </a></li>
 
-          <li><a href="projects.html">Porducto Wake Up</a></li>
-          <li><a href="services.html">Mentorias</a></li>
-          <li><a href="blogs.html">Testimonios</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="../projects.html">Porducto Wake Up</a></li>
+          <li><a href="../services.html">Mentorias</a></li>
+          <li><a href="../blogs.html">Testimonios</a></li>
+          <li><a href="../contact.html">Contacto</a></li>
 
 
 
@@ -80,10 +81,6 @@
               <li><a href="register.html">Registro Membresia</a></li>
             </ul>
           </li> 
-
-          
-
-        
           
   
         </ul>
@@ -94,30 +91,24 @@
   </header>
   <!-- End Header -->
 
-  <!-- - - - - - - - -  Hero Section - - - - - - - -  -->
-  <section id="hero" class="hero">
-    <div class="container position-relative">
-      <div class="row gy-5" data-aos="fade-in">
-        <div class="col-lg-7 d-flex flex-column align-items-start justify-content-center text-left caption">
-          <h2 data-aos="fade-left" data-aos-delay="100"><span class="circle">Giancarla Marisio</span><br/></h2>
-          <h3 data-aos="zoom-out" data-aos-delay="500">Master Trainer NLP / Alto Rendimiento / Bienestar</h3>
-          <p data-aos="fade-left" data-aos-delay="1000">🧩Entreno a equipos y personas en habilidades, bienestar y psicología del talento.
-            🎓y🎤 en Harvard</p>
-          <div class="d-flex" data-aos-delay="2000" data-aos="zoom-out">
-            <!-- <a href="#about" class="btn-get-started">Get Started</a> -->
-            <a href="https://www.youtube.com/@almando_rp" class=" btn-watch-video d-flex align-items-center" target="_blank"><i
-                class="bi bi-play-circle"></i><span>Mira mis videos</span></a>
-          </div>
-        </div>
-        <div class="col-lg-5 d-flex flex-column align-items-start justify-content-center text-left caption mobile-pt">
-          <img src="assets/images/jusgando.png" class="img-fluid rounded-4 mb-4" alt="">
-        </div>
+
+   
+  <main>
+      <div class="contenedor">
+          <div class="suelo"></div>
+          <div class="dino dino-corriendo"></div>
+          <div class="score">0</div>
       </div>
-    </div>
-  </section>
-  <!-- End Hero Section -->  
-
-
+      <div class="game-over">GAME OVER</div>
+      <div class="controls">
+          <button id="startButton">Jugar</button>
+          <button id="stopButton">Parar</button>
+      </div>
+  </main>
+ 
+  <script src="./javascript.js"></script>
+    
+  </main><!-- End #main -->
 
   <!-- - - - - - - - -  Footer - - - - - - - -  -->
   <footer id="footer" class="footer-section">
@@ -212,17 +203,17 @@
 
 
   <!-- Vendor JS Files -->
-  <script src="assets/javascripts/jquery.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/javascripts/plugins.js"></script>
-  <script src="assets/javascripts/validator.min.js"></script>
-  <script src="assets/javascripts/contactform.js"></script>
+  <script src="javascript.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/javascripts/plugins.js"></script>
+  <script src="../assets/javascripts/validator.min.js"></script>
+  <script src="../assets/javascripts/contactform.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/javascripts/main.js"></script>
+  <script src="../assets/javascripts/main.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6JBW2SW9L0"></script>
