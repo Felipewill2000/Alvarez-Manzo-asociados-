@@ -91,165 +91,38 @@
     </div>
 
   </header>
-  <!-- End Header -->
-
   <main id="main">
-
-    <!--  - - - - - - - -  Breadcrumbs  - - - - - - - -  -->
-    <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('');">
-        <div class="container position-relative">
-          <h2 class="text-center">Testimonios</h2>
-          
+    <section class="jeje">
+      <center>
+        <!-- Contenedor de testimonios -->
+        <div id="testimonios" style="margin-bottom: 20px;"></div>
+  
+        <!-- Contenedor del formulario -->
+        <div class="container" style="border: 5px solid black; padding: 20px; border-radius: 10px; max-width: 600px;">
+          <h1>Testimonios</h1>
+          <div class="input-container col-6">
+            <input type="text" id="inputNombre" maxlength="50" placeholder="Escribe tu nombre aquí...">
+            <textarea id="inputTestimonio" maxlength="200" placeholder="Escribe tu testimonio aquí..."></textarea>
+            <button onclick="mostrarModal()">Enviar</button>
+          </div>
+        </div>
+      </center>
+    </section>
+  
+    <!-- Modal -->
+    <div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
+      <div style="background: white; padding: 20px; border-radius: 10px; max-width: 400px; text-align: center; position: relative;">
+        <!-- Botón de cierre -->
+        <button onclick="cerrarModal()" style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer;">&times;</button>
+        <h2>Confirmar Testimonio</h2>
+        <p id="modalContent"></p>
+        <div style="margin-top: 20px;">
+          <button onclick="declinarTestimonio()" style="padding: 10px; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer;">Declinar</button>
+          <button onclick="agregarTestimonio()" style="padding: 10px; background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Agregar</button>
         </div>
       </div>
-     
-    </div><!-- End Breadcrumbs -->
-
-    <section class="single-page">
-      <div class="container" data-aos="fade-up">
-        <!-- - - - - - - - -  Recent Blog Posts Section - - - - - - - -  -->
-        <div id="recent-posts" class="recent-posts">
-          <div class="container" data-aos="fade-up">
-            <div class="row gy-4">
-              <div class="col-lg-4">
-                <article>
-                  <div class="post-img">
-                    <img src="assets/images/blog/blog-1.jpg" alt="" class="img-fluid">
-                  </div>
-                  <p class="post-category">Domain & Hosting</p>
-                  <h2 class="title">
-                    <a href="blogs-details.html">How to host website on any hosting provider?</a>
-                  </h2>
-                  <div class="d-flex align-items-center">
-                    <div class="post-meta">
-                      <p class="post-author">William Bla</p>
-                      <p class="post-date">
-                        <time datetime="2022-01-01">Feb 1, 2022</time>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div><!-- End post list item -->
-
-              <div class="col-lg-4">
-                <article>
-                  <div class="post-img">
-                    <img src="assets/images/blog/blog-2.jpg" alt="" class="img-fluid">
-                  </div>
-                  <p class="post-category">Advertisement</p>
-                  <h2 class="title">
-                    <a href="blogs-details.html">How to create add on google adwords?</a>
-                  </h2>
-                  <div class="d-flex align-items-center">
-                    <div class="post-meta">
-                      <p class="post-author">Jobi Ret</p>
-                      <p class="post-date">
-                        <time datetime="2022-01-01">Oct 5, 2022</time>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div><!-- End post list item -->
-
-              <div class="col-lg-4">
-                <article>
-                  <div class="post-img">
-                    <img src="assets/images/blog/blog-3.jpg" alt="" class="img-fluid">
-                  </div>
-                  <p class="post-category">Marketing</p>
-                  <h2 class="title">
-                    <a href="blogs-details.html">What is digital marketing and why is important?</a>
-                  </h2>
-                  <div class="d-flex align-items-center">
-                    <div class="post-meta">
-                      <p class="post-author">Main Dow</p>
-                      <p class="post-date">
-                        <time datetime="2022-01-01">Dec 22, 2022</time>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div><!-- End post list item -->
-
-              <div class="col-lg-4">
-                <article>
-                  <div class="post-img">
-                    <img src="assets/images/blog/blog-4.jpg" alt="" class="img-fluid">
-                  </div>
-                  <p class="post-category">Mobile Phone</p>
-                  <h2 class="title">
-                    <a href="blogs-details.html">WhyThe Iphone 20 is most selling phone in the world?</a>
-                  </h2>
-                  <div class="d-flex align-items-center">
-                    <div class="post-meta">
-                      <p class="post-author">Main Dow</p>
-                      <p class="post-date">
-                        <time datetime="2022-01-01">Jan 22, 2022</time>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div><!-- End post list item -->
-
-              <div class="col-lg-4">
-                <article>
-                  <div class="post-img">
-                    <img src="assets/images/blog/blog-5.jpg" alt="" class="img-fluid">
-                  </div>
-                  <p class="post-category">Social Media</p>
-                  <h2 class="title">
-                    <a href="blogs-details.html">How to you can learn any skill from youtube?</a>
-                  </h2>
-                  <div class="d-flex align-items-center">
-                    <div class="post-meta">
-                      <p class="post-author">Main Dow</p>
-                      <p class="post-date">
-                        <time datetime="2022-01-01">October 22, 2022</time>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div><!-- End post list item -->
-
-              <div class="col-lg-4">
-                <article>
-                  <div class="post-img">
-                    <img src="assets/images/blog/blog-6.jpg" alt="" class="img-fluid">
-                  </div>
-                  <p class="post-category">Jobs</p>
-                  <h2 class="title">
-                    <a href="blogs-details.html">How to get job in 30 days? Know 30 Tips</a>
-                  </h2>
-                  <div class="d-flex align-items-center">
-                    <div class="post-meta">
-                      <p class="post-author">Main Dow</p>
-                      <p class="post-date">
-                        <time datetime="2022-01-01">Dec 29, 2022</time>
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              </div><!-- End post list item -->
-
-            </div><!-- End recent posts list -->
-
-          </div>
-        </div><!-- End Recent Blog Posts Section -->
-      </div>
-    </section>
-    <div class="container">
-      <h1>Testimonios</h1>
-      <div id="testimonios"></div>
-      <div class="input-container">
-          <input type="text" id="inputTestimonio" maxlength="200" placeholder="Escribe tu testimonio aquí...">
-          <button onclick="agregarTestimonio()">Enviar</button>
-      </div>
-  </div>
-
-
-
-  </main><!-- End #main -->
+    </div>
+  </main>
 
   <footer id="footer" class="footer-section">
     <div class="container">
@@ -285,6 +158,7 @@
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block">
                     <div class="footer-menu text-right">
                       <li><a href="index.html">Home</a></li>
+                      <li><a href="policy.html">Conoceme</a></li>
                       <li><a href="projects.html">Porducto Wake Up</a></li>
                       <li><a href="services.html">Mentorias</a></li>
                       <li><a href="blogs.html">Testimonios</a></li>
